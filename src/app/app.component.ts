@@ -1,16 +1,13 @@
 import { Component, Input, DoCheck} from '@angular/core';
-import { LoginDirective } from './login/login.directive';
+import { LoginComponent } from './login/login.component';
+import { Router } from '@angular/router';
 
 @Component(
     {
         selector: 'my-app',
         template: `
-        <h2>Login</h2>
-        <input id = "name" type="text" placeholder="Insert name here"/>
-        <input id = "pass" type="password" placeholder="Insert password here">
-        <input type="button" (click) = onYouGo() value="Hey"> 
-        <login-app [nama] = "name" [password] = "pass" [first] = "first" (message) = "msg=($event)"></login-app>
-        <p> {{msg}} </p>
+        <h2>App</h2>
+        <router-outlet></router-outlet>
         `
     }
 )
