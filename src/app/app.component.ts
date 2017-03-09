@@ -10,7 +10,7 @@ import { LoginDirective } from './login/login.directive';
         <input id = "pass" type="password" placeholder="Insert password here">
         <input type="button" (click) = onYouGo() value="Hey"> 
         <login-app [nama] = "name" [password] = "pass" [first] = "first" (message) = "msg=($event)"></login-app>
-        <p> {{message}} </p>
+        <p> {{msg}} </p>
         `
     }
 )
