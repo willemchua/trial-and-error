@@ -7,6 +7,7 @@ import { Router, ActivatedRoute} from '@angular/router';
         <h2>Login</h2>
         <input id = "name" type="text" placeholder="Insert name here"/>
         <input id = "pass" type="password" placeholder="Insert password here">
+        <input type="file" accept="image/*" capture="camera"/>
         <input type="button" (click) = onYouGo() value="Hey"> 
         <p> {{msg}} </p>
     `
